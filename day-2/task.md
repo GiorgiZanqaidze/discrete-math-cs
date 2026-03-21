@@ -65,6 +65,7 @@ DEP_INSTALLED
 
 
 
+
 ## Exercises — Set B (Bug Hunting)
 
 Each formula has a mistake. Find it and fix it.
@@ -73,28 +74,40 @@ Each formula has a mistake. Find it and fix it.
 **English:** "Access is granted if the user is an admin or the request is internal."  
 **Given formula:** a ∧ r → g  
 **What's wrong?**  
-My answer:  
+My answer:  we have OR and now END so we must use ∨
 
 
-**My corrected formula:**  
+**My corrected formula:**  a ∨ r → g
 
 
 ### #7
 **English:** "The email is sent only if the user has opted in and the address is verified."  
 **Given formula:** (o ∧ v) → e  
 **What's wrong?**  
-My answer:  
+My answer:  if email is send web know 100% that user has opted in and adress isverified. but can't say vice versa
 
 
-**My corrected formula:**  
+**My corrected formula:**  e -> (o ∧ v)
 
 
 ### #8
 **English:** "The cache is cleared unless it was updated in the last hour."  
 **Given formula:** u → ¬c  
 **What's wrong?**  
-My answer:  
+My answer: it is  c → ¬u  
 
 
-**My corrected formula:**  
+**My corrected formula:**  c → ¬u 
 
+
+---
+
+## Rosen Textbook Exercises
+
+§1.1 Exercises 23–35: _(fill in after completing Sets A & B above)_
+
+---
+
+## Corrections & Takeaways
+
+_(fill in after grading)_
