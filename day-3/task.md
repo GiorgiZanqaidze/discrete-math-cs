@@ -26,17 +26,17 @@
 
 ### #1
 **Expression:** ¬(p ∧ q)  
-**My answer:**  
+**My answer:**  ¬p ∨ ¬q
 
 
 ### #2
 **Expression:** ¬(¬p ∨ q)  
-**My answer:**  
+**My answer:**  p ∧ ¬q
 
 
 ### #3
 **Expression:** ¬(p ∧ (q ∨ r))  
-**My answer:**  
+**My answer:**  ¬(p ∧ q) ∧ ¬(p ∧ r)
 
 
 ---
@@ -46,24 +46,24 @@
 ### #4
 **Prove:** p → q ≡ ¬q → ¬p  
 **My proof:**  
-Step 1:  
-Step 2:  
-Step 3:  
+Step 1:  p → q === ¬p ∨ q ; ¬q → ¬p === q ∨ ¬p conditionaldisjunction equivalence
+Step 2:  ¬p ∨ q === q ∨ ¬p 
+Step 3:  ¬p ∨ q === ¬p ∨ q
 
 
 ### #5
 **Prove:** ¬(p → q) ≡ p ∧ ¬q  
 **My proof:**  
-Step 1:  
-Step 2:  
+Step 1:  ¬(¬p ∨ q) === p ∧ ¬q conditionaldisjunction equivalence
+Step 2:  p ∧ ¬q === p ∧ ¬q
 Step 3:  
 
 
 ### #6
 **Prove:** p ∨ (p ∧ q) ≡ p  (Absorption Law)  
 **My proof:**  
-Step 1:  
-Step 2:  
+Step 1:  (p ∨ p) ∨ (p ∧ q) === T ∨ (p ∧ q)
+Step 2:  T ∨ (p ∧ q) === T Domination laws
 Step 3:  
 
 
@@ -78,14 +78,14 @@ Step 3:
 
 
 ### #8
-**Expression:** ¬(¬p ∧ ¬q)  
-**Simplified:**  
-**Laws used:**  
+**Expression:** ¬(¬p ∧ ¬q)   
+**Simplified:**  p ∨ q
+**Laws used:**  De Morgan’s laws
 
 
 ### #9
 **Expression:** (p → q) ∧ (q → p)  
-**Simplified:**  
+**Simplified:**  p double conjunction with q
 **Laws used:**  
 
 
